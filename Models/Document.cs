@@ -12,7 +12,7 @@ namespace EditWordWithOpenXML.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Template { get; set; } = (@"C:\Users\ITA8-TN04\OneDrive - IT-Akademie Dr. Heuer GmbH\git\EditWordWithOpenXML\Data\Vorher.docx");
+        public string Template { get; set; } = (@"C:\Users\Windows10\OneDrive - IT-Akademie Dr. Heuer GmbH\git\EditWordWithOpenXML\Data\Vorher.docx");
 
         // To search and replace content in a document part.
         public static void SearchAndReplace(string document)
@@ -25,8 +25,8 @@ namespace EditWordWithOpenXML.Models
                     docText = sr.ReadToEnd();
                 }
 
-                Regex regexText = new Regex("auszutschen");
-                docText = regexText.Replace(docText, "Hi Everyone!");
+                Regex regexText = new Regex("Example");
+                docText = regexText.Replace(docText, "Hi Everyone! 2021-09-10");
 
                 using (StreamWriter sw = new StreamWriter(wordDoc.MainDocumentPart.GetStream(FileMode.Create)))
                 {

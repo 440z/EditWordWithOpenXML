@@ -154,7 +154,7 @@ namespace EditWordWithOpenXML.Controllers
 
         //***************************************************************************
 
-        public string templateFile { get; set; } = (@"C:\Users\ITA8-TN04\OneDrive - IT-Akademie Dr. Heuer GmbH\git\EditWordWithOpenXML\Data\Vorher.docx");
+        public string templateFile { get; set; } = (@"C:\Users\Windows10\OneDrive - IT-Akademie Dr. Heuer GmbH\git\EditWordWithOpenXML\Data\Vorher.docx");
 
         public void RunSearchAndReplace()
         {
